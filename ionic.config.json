@@ -1,0 +1,8 @@
+{
+  "name": "progetto_tpist",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "5228d3eb"
+}
