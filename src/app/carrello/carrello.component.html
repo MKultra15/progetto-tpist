@@ -1,0 +1,5 @@
+<div *ngFor="let oggetto of oggetti; let i = index" class="oggetto">
+  <p>{{ oggetto.nome }}</p>
+  <p>{{ oggetto.prezzo }}</p>
+  <button (click)="rimuoviOggetto(i)">Rimuovi</button>
+</div>
