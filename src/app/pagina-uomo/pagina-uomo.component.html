@@ -19,11 +19,11 @@
 
         <div class="col-3 col-md-3 card_cont">
         <div class="card card_cont" style="width: 18rem; border: 2px solid black;">
-            <img href="../../images/8DMP019AC00626_M_DARKP-MGR.a.jpg" class="card-img-top" alt="pantoloni_uomo" style="height: 320px; border-bottom: 2px solid black;">
+            <img src="https://cdn.shopify.com/s/files/1/0733/1155/1800/products/1_12f4df12-1ceb-4d82-afc2-38856c263ca4.jpg?v=1681213226&width=800" class="card-img-top" alt="pantoloni_uomo" style="height: 320px; border-bottom: 2px solid black;">
             <div class="card-body" style="background-color: #d3d0c9;">
               <h5 class="card-title"><b>Pantaloni</b></h5>
-              <p class="card-text"><b>Pantaloni uomo</b></p>
-              <!--<app-bottone></app-bottone>-->
+              <p class="card-text"><b>Pantaloni uomo <br> PREZZO: 40</b></p>
+              <app-bottone [bottoneNome]="pantaloniUomo" [bottonePrezzo]="prezzoPantaloniUomo"></app-bottone>
             </div>
           </div>
         </div>
@@ -31,12 +31,12 @@
           <!-- CARD 2 -->
 
           <div class="col-3 col-md-3 card_cont">
-          <div class="card  card_cont" style="width: 18rem; border: 2px solid black;">
-            <img src="../images/maglietta_uomo.jpg" class="card-img-top" alt="maglietta_uomo" style="height: 320px; border-bottom: 2px solid black;">
+          <div class="card  card_cont" style="width: 18rem; border: 2px solid black;" nome="maglietta" prezzo="25">
+            <img src="https://i.pinimg.com/564x/0a/20/5a/0a205a7ad6b1807af42e5b621bffe711.jpg" class="card-img-top" alt="maglietta_uomo" style="height: 320px; border-bottom: 2px solid black;">
             <div class="card-body" style="background-color: #d3d0c9;">
               <h5 class="card-title"><b>Maglietta</b></h5>
-              <p class="card-text"><b>Maglietta uomo</b></p>
-              <a href="#" class="btn btn-dark">Acquista</a>
+              <p class="card-text"><b>Maglietta uomo <br> PREZZO: 25</b></p>
+              <app-bottone [bottoneNome]="magliettaUomo" [bottonePrezzo]="prezzoMagliettaUomo"></app-bottone>
             </div>
           </div>
         </div>
@@ -45,11 +45,11 @@
 
           <div class="col-3 col-md-3  card_cont">
           <div class="card  card_cont" style="width: 18rem; border: 2px solid black;">
-            <img src="../images/felpa_uomo.jpg" class="card-img-top" alt="felpa_uomo" style="height: 320px; border-bottom: 2px solid black;">
+            <img src="https://i.pinimg.com/564x/fe/3e/2f/fe3e2ff9b5a92e26b5408a5a22feb142.jpg" class="card-img-top" alt="felpa_uomo" style="height: 320px; border-bottom: 2px solid black;">
             <div class="card-body" style="background-color: #d3d0c9;">
               <h5 class="card-title"><b>Felpa</b></h5>
-              <p class="card-text"><b>Felpa uomo</b></p>
-              <a href="#" class="btn btn-dark">Acquista</a>
+              <p class="card-text"><b>Felpa uomo <br> PREZZO: 60</b></p>
+              <app-bottone [bottoneNome]="felpaUomo" [bottonePrezzo]="prezzoFelpaUomo"></app-bottone>
             </div>
           </div>
           </div>
@@ -58,11 +58,11 @@
 
           <div class="col-3 col-md-3  card_cont">
           <div class="card card_cont" style="width: 18rem; border: 2px solid black;">
-            <img src="../images/scarpe_uomo.jpeg" class="card-img-top" alt="scarpe_uomo" style="height: 320px; border-bottom: 2px solid black;">
+            <img src="https://i.pinimg.com/564x/24/33/29/243329bb6216e54efbaf75c43a55650e.jpg" class="card-img-top" alt="scarpe_uomo" style="height: 320px; border-bottom: 2px solid black;">
             <div class="card-body" style="background-color: #d3d0c9;">
               <h5 class="card-title"><b>Scarpe</b></h5>
-              <p class="card-text"><b>Scarpe uomo</b></p>
-              <a href="#" class="btn btn-dark">Acquista</a>
+              <p class="card-text"><b>Scarpe uomo <br> PREZZO: 120</b></p>
+              <app-bottone [bottoneNome]="scarpeUomo" [bottonePrezzo]="prezzoScarpeUomo"></app-bottone>
             </div>
           </div>
           </div>
@@ -71,30 +71,6 @@
 
   <br>
   <br>
-
-  <!-- FOOTER -->
-
-  <h1 class="social">Seguici sui Social</h1>
-
-  <div class="footer">
-  <div class="row">
-    <div class="col-4">
-        <a href="#">
-        <img src="../images/instagram.png" class="img_social">
-        </a>
-    </div>
-    <div class="col-4">
-        <a href="#">
-        <img src="../images//twitter.2a88a418-b96d-44a6-ad4f-5e0ee6289b2c" class="img_social">
-        </a>
-    </div>
-    <div class="col-4">
-        <a href="#">
-        <img src="../images/telegram.png" class="img_social">
-        </a>
-    </div>
-  </div>
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

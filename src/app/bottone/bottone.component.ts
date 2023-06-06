@@ -1,22 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { CarrelloComponent } from '../carrello/carrello.component';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { AggiungiAlCarrrello } from '../servivi/aggiungi-al-carrello.service';
+import { PaginaUomoComponent } from '../pagina-uomo/pagina-uomo.component';
 
 @Component({
   selector: 'app-bottone',
-  templateUrl: './bottone.component.html',
-  styleUrls: ['./bottone.component.scss'],
+  template: `
+    <button (click)="addItemToCart()" class="btn btn-dark">Acquista</button>
+  `
 })
-export class BottoneComponent  implements OnInit {
-
-  constructor(private carrello: CarrelloComponent) { }
-
-  ngOnInit() {}
-
-  aggiungiAlCarrello() {
-    const oggetto = {
-      nome: 'Oggetto da acquistare',
-      prezzo: 10.99
-    };
-    this.carrello.aggiungiOggetto(oggetto);
+export class BottoneComponent {
+  @Input() bottoneNome: string = "";
+  @Input() bottonePrezzo: number = 0;
+  constructor(private aggiungialcarrello: AggiungiAlCarrrello) { }
+  
+  addItemToCart(): void {
+    const nome = this.bottoneNome;
+    const prezzo = this.bottonePrezzo;
+    this.aggiungialcarrello.addItem(nome, prezzo);
   }
-}
+}  

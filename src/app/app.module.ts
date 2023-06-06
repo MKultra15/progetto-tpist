@@ -13,6 +13,9 @@ import { PaginaUomoComponent } from './pagina-uomo/pagina-uomo.component';
 import { PaginaDonnaComponent } from './pagina-donna/pagina-donna.component';
 import { CarrelloComponent } from './carrello/carrello.component';
 import { BottoneComponent } from './bottone/bottone.component';
+import { AggiungiAlCarrrello } from './servivi/aggiungi-al-carrello.service';
+import { IconaCarrelloComponent } from './icona-carrello/icona-carrello.component';
+
 
 
 @NgModule({
@@ -24,10 +27,11 @@ import { BottoneComponent } from './bottone/bottone.component';
     PaginaUomoComponent,
     PaginaDonnaComponent,
     CarrelloComponent,
-    BottoneComponent
+    BottoneComponent,
+    IconaCarrelloComponent
   ],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, RouterModule],
+  providers: [ AggiungiAlCarrrello,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy} ],
   bootstrap: [AppComponent],
 
 })
